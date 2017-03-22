@@ -8,5 +8,9 @@ export default Ember.Component.extend({
     toggleListDetail () {
       return this.toggleProperty('listDetailHidden');
     },
+    toggleItemDone(item) {
+      console.log("GOT SHOPPING LIST");
+      return this.sendAction('toggleItemDone', item);
+    }
   },
 });
