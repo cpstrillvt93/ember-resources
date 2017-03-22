@@ -3,6 +3,9 @@
   {{#each list.items as |item|}}
     {{shopping-list/item
       item=item
-      toggleDone='toggleItemDone'}}
+      toggleDone='toggleItemDone'
+      delete='deleteItem'
+    }}
+
   {{/each}}
 </ul>

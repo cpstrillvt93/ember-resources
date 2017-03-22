@@ -9,6 +9,10 @@ export default Ember.Route.extend({
       console.log('GOT TO THE ROUTE');
       item.toggleProperty('done');
       item.save();
+    },
+    deleteItem(item) {
+      console.log("Got to the Route!");
+      item.destroyRecord(item);
     }
   }
 });
