@@ -1,5 +1,7 @@
 {{#each model as |list|}}
-  {{shopping-list/card list=list}}
+  {{shopping-list/card
+    list=list
+    edit='editList'}}
 {{/each}}
 
 {{#link-to 'index'}}Back{{/link-to}}

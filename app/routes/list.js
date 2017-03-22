@@ -18,6 +18,6 @@ export default Ember.Route.extend({
       console.log("Got to the Route!");
       let item = this.get('store').createRecord('item', data);
       item.save();
-    }
+    },
   }
 });
