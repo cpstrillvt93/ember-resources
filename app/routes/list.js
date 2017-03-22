@@ -13,6 +13,11 @@ export default Ember.Route.extend({
     deleteItem(item) {
       console.log("Got to the Route!");
       item.destroyRecord(item);
+    },
+    createItem(data) {
+      console.log("Got to the Route!");
+      let item = this.get('store').createRecord('item', data);
+      item.save();
     }
   }
 });

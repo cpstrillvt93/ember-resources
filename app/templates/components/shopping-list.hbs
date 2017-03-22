@@ -8,4 +8,9 @@
     }}
 
   {{/each}}
+  <form class='form-group' {{action 'createItem' on='submit'}}>
+    {{input placeholder='New Item'
+            class='input-group form-control'
+            value=newItem.content}}
+  </form>
 </ul>
